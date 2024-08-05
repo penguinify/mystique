@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ml"
+version = "0.1.0"
+description = "ml training for mystique"
+authors = ["penguinify <penguinifyminecraft@gmail.com>"]
+license = "GPL-3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.2"
+scikit-learn = "^1.5.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
