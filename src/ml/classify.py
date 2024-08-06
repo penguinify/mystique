@@ -1,10 +1,11 @@
 import joblib
 import sys
+import subprocess
 
 model = joblib.load('./src/ml/models/model.pkl')
 
 def classify(song, author):
-    label = model.predict([song + ' ' + author])[0]
+    label = model.predict([song + ' ; ' + author])[0]
     return label
 
 if __name__ == '__main__':

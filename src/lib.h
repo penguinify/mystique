@@ -10,4 +10,7 @@ int classify(char *title, char *artist);
 
 struct Video get_current_video();
 
+int start_daemon();
+int stop_daemon();
+
 #endif //LIB_H
