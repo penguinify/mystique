@@ -74,34 +74,6 @@ void parse_args(int argc, char *argv[]) {
 
 
 int main(int argc, char *argv[]) {
-    
-    // pid_t pid = fork();
-    // if (pid == -1) {
-    //     perror("fork");
-    //     exit(1);
-    // }
-    //
-    // printf("PID: %d\n", pid);
-    //
-    // // close parent
-    // if (pid > 0) {
-    //     return 0;
-    // }
-
-    // while (1)
-    // {
-    //     struct Video video = get_current_video();
-    //
-    //     int type = classify(video.title, video.artist);
-    //     printf("%d\n", type);
-    //
-    //     if (type == 3) {
-    //         system("nowplaying-cli seek 1000");
-    //     }
-    //
-    //     sleep(4);
-    // }
-    
     parse_args(argc, argv);
 
     return 0;
