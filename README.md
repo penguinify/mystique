@@ -21,6 +21,10 @@ Install xcode command line tools
 ```bash
 xcode-select --install
 ```
+Install python throught their website or through brew
+```bash
+brew install python
+```
 Now playing cli (MUST BE FROM SOURCE)
 ```bash
 git clone https://github.com/kirtan-shah/nowplaying-cli.git && cd nowplaying-cli
@@ -30,6 +34,10 @@ cd .. && rm -rf nowplaying-cli
 Clone this repository
 ```bash
 git clone https://github.com/penguinify/mystique.git && cd mystique
+```
+Install python dependencies
+```bash
+pip3 install joblib
 ```
 Build CMakelists
 ```bash

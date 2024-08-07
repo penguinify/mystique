@@ -3,21 +3,29 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <signal.h>
+#include <time.h>
 
 #include "lib.h"
 #include "conf.h"
+#include "discord_game_sdk.h"
 
 
 /* 1. ERR
  * 2. SONG
  * 3. ADVERTISEMENT
  */
-int classify(char *title, char *artist) {
+int classify(struct Video video) {
+
+    // if there is an album, it is a song
+    if (strlen(video.album) > 0) {
+        return 2;
+    }
+
     FILE *output;
     char type[15];
 
     char command[130];
-    sprintf(command, "python3 ./src/ml/classify.py \"%s\" \"%s\"", title, artist);
+    sprintf(command, "python3 ./src/ml/classify.py \"%s\" \"%s\"", video.title, video.artist);
 
     output = popen(command, "r");
     if (output == NULL) {
@@ -43,7 +51,7 @@ int classify(char *title, char *artist) {
 struct Video get_current_video() {
     FILE *output;
     
-    struct Video video = { "", "" };
+    struct Video video = { "", "", "" };
 
     output = popen("nowplaying-cli get title artist", "r");
 
@@ -63,6 +71,19 @@ struct Video get_current_video() {
     video.artist[strcspn(video.artist, "\n")] = 0;
 
     return video;
+}
+
+void update_presence(struct IDiscordActivityManager* activity_manager, struct Video video)  {
+   struct DiscordActivity activity;
+    memset(&activity, 0, sizeof(activity));
+    strcpy(activity.state, video.artist);
+    strcpy(activity.details, video.title);
+    strcpy(activity.assets.large_image, "ytm"); // Image key from your Discord application
+    strcpy(activity.assets.large_text, "youtube music");
+    strcpy(activity.assets.small_image, "mystique"); // Image key from your Discord application
+    strcpy(activity.assets.small_text, "provided by mystique");
+
+    activity_manager->update_activity(activity_manager, &activity, NULL, NULL);
 }
 
 int start_daemon() {
@@ -95,17 +116,46 @@ int start_daemon() {
 
     fclose(file);
 
-    while (1) {
-        struct Video video = get_current_video();
+    struct IDiscordCore* core;
+    struct DiscordCreateParams params;
+    DiscordCreateParamsSetDefault(&params);
+    params.client_id = 1270609373244428298;
+    params.flags = DiscordCreateFlags_NoRequireDiscord;
 
-        int type = classify(video.title, video.artist);
+    enum EDiscordResult result = DiscordCreate(DISCORD_VERSION, &params, &core);
+    if (result != DiscordResult_Ok) {
+        printf("Failed to initialize Discord SDK: %d\n", result);
+        return -1;
+    }
+
+    struct IDiscordActivityManager* activity_manager = core->get_activity_manager(core);
+
+    struct Video video = { "this", "is", "a test" };
+    struct Video last_video = { "", "", "" };
+
+    while (1) {
+        video = get_current_video();
+        core->run_callbacks(core);
+
+        if (strcmp(video.title, last_video.title) == 0 && strcmp(video.artist, last_video.artist) == 0) {
+            sleep(4);
+            continue;
+        }
+
+
+        update_presence(activity_manager, video);
+
+        int type = classify(video);
 
         if (type == 3) {
             system("nowplaying-cli seek 1000");
         }
 
+        last_video = video;
         sleep(4);
     }
+
+    core->destroy(core);
 }
 
 int stop_daemon() {

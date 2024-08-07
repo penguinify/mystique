@@ -592,6 +592,10 @@ video {
   margin-right: 0.5rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-12 {
   margin-top: 3rem;
 }
@@ -662,6 +666,10 @@ video {
 
 .gap-10 {
   gap: 2.5rem;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .gap-16 {
@@ -775,8 +783,8 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:text-6xl {
-    font-size: 3.75rem;
+  .lg\:text-5xl {
+    font-size: 3rem;
     line-height: 1;
   }
 }
