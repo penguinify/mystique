@@ -1,3 +1,17 @@
+<div align="center" >
+
+<img src="https://penguinify.github.io/mystique/mystique.png" width="60%">
+
+# adblock daemon for macos
+[FAQ](#faq)
+[Installation](#installation)
+[Source](#source)
+</div>
+
+<br><br><br>
+## FAQ
+What is this?
+- This is a adblock daemon for macos. It uses ml to detect advertisements and skips them using nowplaying-cli
 ## Installation
 
 ### Source
