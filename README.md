@@ -24,6 +24,10 @@ brew tap penguinify/homebrew-penguinify
 Install mystique (arm64 only at the moment)
 ```bash
 brew install mystique-arm64
+# Repairs the daemon.txt
+mystique -r
+# Starts the daemon
+mystique --start-daemon
 ```
 
 ### Source

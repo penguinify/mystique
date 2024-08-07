@@ -12,6 +12,7 @@ void print_help() {
     printf("Usage: %s [OPTION]\n", "main");
     printf("  -h, --help\t\tPrint this help message\n");
     printf("  -v, --version\t\tPrint the version\n");
+    printf("  -r, --repair\t\tRepair the daemon.txt file\n");
     printf("  --start-daemon\tStart the daemon\n");
     printf("  --stop-daemon\t\tStop the daemon\n");
 }
@@ -39,6 +40,7 @@ void parse_args(int argc, char *argv[]) {
     struct option long_options[] = {
         {"help", no_argument, 0, 'h'},
         {"version", no_argument, 0, 'v'},
+        {"repair", no_argument, 0, 'r'},
         {"start-daemon", no_argument, 0, 1},
         {"stop-daemon", no_argument, 0, 2},
         {0, 0, 0, 0}
@@ -47,13 +49,16 @@ void parse_args(int argc, char *argv[]) {
     int c;
     int option_index = 0;
 
-    while ((c = getopt_long(argc, argv, "hv", long_options, &option_index)) != -1) {
+    while ((c = getopt_long(argc, argv, "hvr", long_options, &option_index)) != -1) {
         switch (c) {
             case 'h':
                 print_help();
                 return;
             case 'v':
                 print_version();
+                return;
+            case 'r':
+                repair_daemon();
                 return;
             case 1:
                 printf("Starting daemon\n");
