@@ -5,6 +5,7 @@ struct Video {
     char title[50];
     char artist[50];
     char album[50];
+    int state;
 };
 
 int classify(struct Video video);

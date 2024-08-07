@@ -16,7 +16,20 @@ What is this?
   * Prevent iTunes from automatically opening when the pause/play button is pressed
 ## Installation
 
+### Homebrew
+Install my tap
+```base
+brew tap penguinify/homebrew-penguinify
+```
+Install mystique (arm64 only at the moment)
+```bash
+brew install mystique-arm64
+```
+
 ### Source
+
+## INSTALL FROM SOURCE IS CURRENTLY NOT WORKING. PLEASE USE HOMEBREW TO INSTALL <3
+
 Install xcode command line tools
 ```bash
 xcode-select --install
