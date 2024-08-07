@@ -2,7 +2,7 @@
 
 <img src="https://penguinify.github.io/mystique/mystique.png" width="60%">
 
-# adblock daemon for macos
+# music daemon for macos
 [FAQ](#faq)
 [Installation](#installation)
 </div>
@@ -10,7 +10,10 @@
 <br><br><br>
 ## FAQ
 What is this?
-- This is a adblock daemon for macos. It uses ml to detect advertisements and skips them using nowplaying-cli
+- mystique is many things for sound on macos. some planned features include:
+  * Auto skip advertisements using ml (Implemented)
+  * Discord Rich Presence for Videos
+  * Prevent iTunes from automatically opening when the pause/play button is pressed
 ## Installation
 
 ### Source
