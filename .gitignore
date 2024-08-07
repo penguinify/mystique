@@ -11,3 +11,5 @@ CTestTestfile.cmake
 _deps
 CMakeUserPresets.json
 mystique
+node_modules/
+pnpm-lock.yaml
