@@ -5,7 +5,6 @@
 # adblock daemon for macos
 [FAQ](#faq)
 [Installation](#installation)
-[Source](#source)
 </div>
 
 <br><br><br>
