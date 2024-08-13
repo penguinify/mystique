@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECC5CA252C642AB0008CCC6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5CA242C642AB0008CCC6E /* AppDelegate.swift */; };
+		ECC5CA272C642AB0008CCC6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5CA262C642AB0008CCC6E /* ViewController.swift */; };
+		ECC5CA292C642AB1008CCC6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC5CA282C642AB1008CCC6E /* Assets.xcassets */; };
+		ECC5CA2C2C642AB1008CCC6E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = ECC5CA2B2C642AB1008CCC6E /* Base */; };
+		ECC5CA372C642AB1008CCC6E /* mystiqueappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5CA362C642AB1008CCC6E /* mystiqueappTests.swift */; };
+		ECC5CA412C642AB1008CCC6E /* mystiqueappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5CA402C642AB1008CCC6E /* mystiqueappUITests.swift */; };
+		ECC5CA432C642AB1008CCC6E /* mystiqueappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5CA422C642AB1008CCC6E /* mystiqueappUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECC5CA332C642AB1008CCC6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECC5CA192C642AB0008CCC6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECC5CA202C642AB0008CCC6E;
+			remoteInfo = mystiqueapp;
+		};
+		ECC5CA3D2C642AB1008CCC6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECC5CA192C642AB0008CCC6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECC5CA202C642AB0008CCC6E;
+			remoteInfo = mystiqueapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ECC5CA212C642AB0008CCC6E /* mystiqueapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mystiqueapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECC5CA242C642AB0008CCC6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECC5CA262C642AB0008CCC6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECC5CA282C642AB1008CCC6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECC5CA2B2C642AB1008CCC6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECC5CA2D2C642AB1008CCC6E /* mystiqueapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mystiqueapp.entitlements; sourceTree = "<group>"; };
+		ECC5CA322C642AB1008CCC6E /* mystiqueappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mystiqueappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECC5CA362C642AB1008CCC6E /* mystiqueappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mystiqueappTests.swift; sourceTree = "<group>"; };
+		ECC5CA3C2C642AB1008CCC6E /* mystiqueappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mystiqueappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECC5CA402C642AB1008CCC6E /* mystiqueappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mystiqueappUITests.swift; sourceTree = "<group>"; };
+		ECC5CA422C642AB1008CCC6E /* mystiqueappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mystiqueappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECC5CA1E2C642AB0008CCC6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC5CA2F2C642AB1008CCC6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC5CA392C642AB1008CCC6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECC5CA182C642AB0008CCC6E = {
+			isa = PBXGroup;
+			children = (
+				ECC5CA232C642AB0008CCC6E /* mystiqueapp */,
+				ECC5CA352C642AB1008CCC6E /* mystiqueappTests */,
+				ECC5CA3F2C642AB1008CCC6E /* mystiqueappUITests */,
+				ECC5CA222C642AB0008CCC6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECC5CA222C642AB0008CCC6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECC5CA212C642AB0008CCC6E /* mystiqueapp.app */,
+				ECC5CA322C642AB1008CCC6E /* mystiqueappTests.xctest */,
+				ECC5CA3C2C642AB1008CCC6E /* mystiqueappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECC5CA232C642AB0008CCC6E /* mystiqueapp */ = {
+			isa = PBXGroup;
+			children = (
+				ECC5CA242C642AB0008CCC6E /* AppDelegate.swift */,
+				ECC5CA262C642AB0008CCC6E /* ViewController.swift */,
+				ECC5CA282C642AB1008CCC6E /* Assets.xcassets */,
+				ECC5CA2A2C642AB1008CCC6E /* Main.storyboard */,
+				ECC5CA2D2C642AB1008CCC6E /* mystiqueapp.entitlements */,
+			);
+			path = mystiqueapp;
+			sourceTree = "<group>";
+		};
+		ECC5CA352C642AB1008CCC6E /* mystiqueappTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECC5CA362C642AB1008CCC6E /* mystiqueappTests.swift */,
+			);
+			path = mystiqueappTests;
+			sourceTree = "<group>";
+		};
+		ECC5CA3F2C642AB1008CCC6E /* mystiqueappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ECC5CA402C642AB1008CCC6E /* mystiqueappUITests.swift */,
+				ECC5CA422C642AB1008CCC6E /* mystiqueappUITestsLaunchTests.swift */,
+			);
+			path = mystiqueappUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECC5CA202C642AB0008CCC6E /* mystiqueapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECC5CA462C642AB1008CCC6E /* Build configuration list for PBXNativeTarget "mystiqueapp" */;
+			buildPhases = (
+				ECC5CA1D2C642AB0008CCC6E /* Sources */,
+				ECC5CA1E2C642AB0008CCC6E /* Frameworks */,
+				ECC5CA1F2C642AB0008CCC6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mystiqueapp;
+			productName = mystiqueapp;
+			productReference = ECC5CA212C642AB0008CCC6E /* mystiqueapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECC5CA312C642AB1008CCC6E /* mystiqueappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECC5CA492C642AB1008CCC6E /* Build configuration list for PBXNativeTarget "mystiqueappTests" */;
+			buildPhases = (
+				ECC5CA2E2C642AB1008CCC6E /* Sources */,
+				ECC5CA2F2C642AB1008CCC6E /* Frameworks */,
+				ECC5CA302C642AB1008CCC6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECC5CA342C642AB1008CCC6E /* PBXTargetDependency */,
+			);
+			name = mystiqueappTests;
+			productName = mystiqueappTests;
+			productReference = ECC5CA322C642AB1008CCC6E /* mystiqueappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ECC5CA3B2C642AB1008CCC6E /* mystiqueappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECC5CA4C2C642AB1008CCC6E /* Build configuration list for PBXNativeTarget "mystiqueappUITests" */;
+			buildPhases = (
+				ECC5CA382C642AB1008CCC6E /* Sources */,
+				ECC5CA392C642AB1008CCC6E /* Frameworks */,
+				ECC5CA3A2C642AB1008CCC6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECC5CA3E2C642AB1008CCC6E /* PBXTargetDependency */,
+			);
+			name = mystiqueappUITests;
+			productName = mystiqueappUITests;
+			productReference = ECC5CA3C2C642AB1008CCC6E /* mystiqueappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECC5CA192C642AB0008CCC6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					ECC5CA202C642AB0008CCC6E = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					ECC5CA312C642AB1008CCC6E = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = ECC5CA202C642AB0008CCC6E;
+					};
+					ECC5CA3B2C642AB1008CCC6E = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = ECC5CA202C642AB0008CCC6E;
+					};
+				};
+			};
+			buildConfigurationList = ECC5CA1C2C642AB0008CCC6E /* Build configuration list for PBXProject "mystiqueapp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECC5CA182C642AB0008CCC6E;
+			productRefGroup = ECC5CA222C642AB0008CCC6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECC5CA202C642AB0008CCC6E /* mystiqueapp */,
+				ECC5CA312C642AB1008CCC6E /* mystiqueappTests */,
+				ECC5CA3B2C642AB1008CCC6E /* mystiqueappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECC5CA1F2C642AB0008CCC6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC5CA292C642AB1008CCC6E /* Assets.xcassets in Resources */,
+				ECC5CA2C2C642AB1008CCC6E /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC5CA302C642AB1008CCC6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC5CA3A2C642AB1008CCC6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECC5CA1D2C642AB0008CCC6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC5CA272C642AB0008CCC6E /* ViewController.swift in Sources */,
+				ECC5CA252C642AB0008CCC6E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC5CA2E2C642AB1008CCC6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC5CA372C642AB1008CCC6E /* mystiqueappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC5CA382C642AB1008CCC6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC5CA412C642AB1008CCC6E /* mystiqueappUITests.swift in Sources */,
+				ECC5CA432C642AB1008CCC6E /* mystiqueappUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECC5CA342C642AB1008CCC6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECC5CA202C642AB0008CCC6E /* mystiqueapp */;
+			targetProxy = ECC5CA332C642AB1008CCC6E /* PBXContainerItemProxy */;
+		};
+		ECC5CA3E2C642AB1008CCC6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECC5CA202C642AB0008CCC6E /* mystiqueapp */;
+			targetProxy = ECC5CA3D2C642AB1008CCC6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECC5CA2A2C642AB1008CCC6E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECC5CA2B2C642AB1008CCC6E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECC5CA442C642AB1008CCC6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECC5CA452C642AB1008CCC6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		ECC5CA472C642AB1008CCC6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = mystiqueapp/mystiqueapp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = penguinify.mystiqueapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		ECC5CA482C642AB1008CCC6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = mystiqueapp/mystiqueapp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = penguinify.mystiqueapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		ECC5CA4A2C642AB1008CCC6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = penguinify.mystiqueappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mystiqueapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mystiqueapp";
+			};
+			name = Debug;
+		};
+		ECC5CA4B2C642AB1008CCC6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = penguinify.mystiqueappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mystiqueapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mystiqueapp";
+			};
+			name = Release;
+		};
+		ECC5CA4D2C642AB1008CCC6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = penguinify.mystiqueappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = mystiqueapp;
+			};
+			name = Debug;
+		};
+		ECC5CA4E2C642AB1008CCC6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = penguinify.mystiqueappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = mystiqueapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECC5CA1C2C642AB0008CCC6E /* Build configuration list for PBXProject "mystiqueapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECC5CA442C642AB1008CCC6E /* Debug */,
+				ECC5CA452C642AB1008CCC6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECC5CA462C642AB1008CCC6E /* Build configuration list for PBXNativeTarget "mystiqueapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECC5CA472C642AB1008CCC6E /* Debug */,
+				ECC5CA482C642AB1008CCC6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECC5CA492C642AB1008CCC6E /* Build configuration list for PBXNativeTarget "mystiqueappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECC5CA4A2C642AB1008CCC6E /* Debug */,
+				ECC5CA4B2C642AB1008CCC6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECC5CA4C2C642AB1008CCC6E /* Build configuration list for PBXNativeTarget "mystiqueappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECC5CA4D2C642AB1008CCC6E /* Debug */,
+				ECC5CA4E2C642AB1008CCC6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECC5CA192C642AB0008CCC6E /* Project object */;
+}

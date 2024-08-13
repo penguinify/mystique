@@ -87,7 +87,7 @@ void update_presence(struct IDiscordActivityManager* activity_manager, struct Vi
     strcpy(activity.assets.large_text, "youtube music");
     strcpy(activity.assets.small_image, "mystique"); // Image key from your Discord application
     strcpy(activity.assets.small_text, "provided by mystique");
-    activity.type = DiscordActivityType_Listening;
+    activity.type = 2;
 
     activity_manager->update_activity(activity_manager, &activity, NULL, NULL);
 }
@@ -172,21 +172,14 @@ int start_daemon() {
     while (1) {
         video = get_current_video();
         core->run_callbacks(core);
-        update_presence(activity_manager, video);
-
         // if the video is not playing, skip
         if (video.state == 0) {
+            activity_manager->clear_activity(activity_manager, NULL, NULL);
             sleep(4);
             continue;
         }
 
-
-        // if the video is the same as the last video, skip
-        if (strcmp(video.title, last_video.title) == 0 && strcmp(video.artist, last_video.artist) == 0) {
-            sleep(4);
-            continue;
-        }
-
+        update_presence(activity_manager, video);
 
         // if the video is an advertisement, skip 1000 seconds
         int type = classify(video);
